@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "f572caad-74bf-4bca-af23-5f9dac70f814",
+		"name": "Nyous.noSql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllEventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Evento de NATAAL\",\r\n    \"urlImagem\": \"https://i.ytimg.com/vi/WAlQ7YIfm7o/maxresdefault.jpg\",\r\n    \"link\": \"https://i.ytimg.com/vi/WAlQ7YIfm7o/maxresdefault.jpg\",\r\n    \"DataInicial\": \"2020-12-08\",\r\n    \"DataFinal\": \"2020-12-25\",\r\n    \"Descricao\": \"Evento Natalino Evento Natalino Evento Natalino Evento Natalino Evento Natalino Evento Natalino Evento Natalino\",\r\n    \"Categoria\": \"Natalino\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByGuid(ID)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Eventos/5fcfa0bf26611e0b4ff9de31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Eventos",
+						"5fcfa0bf26611e0b4ff9de31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutEvento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Papai Noel ALTERADOOOOOOOOOO KKSKKSKSKSKSK\",\r\n        \"urlImagem\": \"https://i.ytimg.com/vi/WAlQ7YIfm7o/maxresdefault.jpg\",\r\n        \"link\": \"https://i.ytimg.com/vi/WAlQ7YIfm7o/maxresdefault.jpg\",\r\n        \"dataInicial\": \"2020-12-08T03:00:00Z\",\r\n        \"dataFinal\": \"2020-12-25T03:00:00Z\",\r\n        \"descricao\": \"Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel Evento Papai Noel \",\r\n        \"categoria\": \"Natalino\",\r\n        \"id\": \"5fcfa14c26611e0b4ff9de32\",\r\n        \"dataCriacao\": \"0001-01-01T00:00:00Z\",\r\n        \"dataAlteracao\": \"0001-01-01T00:00:00Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Eventos/5fcfa14c26611e0b4ff9de32",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Eventos",
+						"5fcfa14c26611e0b4ff9de32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEvento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Eventos/5fcfa331316a48053a2c3f1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Eventos",
+						"5fcfa331316a48053a2c3f1a"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
